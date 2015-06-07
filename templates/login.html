@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12 m6 l6 offset-l2 offset-m2 center">
+            <p class="black-text darken-1">Admin Login</p>
+            <form ng-controller="loginCtrl">
+
+                <div class="input-field">
+                    <i class="mdi mdi-email prefix"></i>
+                    <input id="email" type="text" name="email" ng-model="user.email" class="validate">
+                    <label for="email" class="active">Email</label>
+                </div>
+                <div class="input-field">
+                    <i class="mdi mdi-lock prefix"></i>
+                    <input id="password" type="password" name="password" ng-model="user.password" class="validate">
+                    <label for="password" class="actve">Password</label>
+                </div>
+                <div class="input-field">
+                    <button class="btn waves-effect waves-light btn-flat more" type="submit" name="action" ng-click="update(user)">Submit
+                        <i class="mdi-content-send right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html  ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <base href="http://localhost/fisa/">
+    <title>Finance Students Association</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="bower_components/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="styles/unoSlider.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/animate.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+    <nav>
+        <div class="nav-wrapper">
+            <img src="images/logo.jpg" class="brand-logo"/>
+            <ul id="slide-out" class="side-nav right">
+                <li><a href="#">Home</a></li>
+                <li><a ng-href="#alumni">Alumni</a></li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Partners<i class="mdi-navigation-arrow-drop-down"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">Sponsors</a></li>
+                                    <li><a href="#!">Affiliated Associations</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Employers<i class="mdi-navigation-arrow-drop-down"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">Post A Job</a></li>
+                                    <li><a href="#!">Check Jobs</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Resources<i class="mdi-navigation-arrow-drop-down"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">Newsletter</a></li>
+                                    <li><a href="#!">Notes</a></li>
+                                    <li><a href="#!">Notes</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a ng-href="#gallery">Gallery</a></li>
+                <li><a ng-href="#team">Our Team</a></li>
+                <li><a ng-href="#contact">Contact Us</a></li>
+            </ul>
+            <!-- end sidebar -->
+            <!-- nav menu-->
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#alumni">Alumni</a></li>
+                <li><a class="dropdown-button expand" href="#!" data-activates="partners">Partners<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    <ul id='partners' class='dropdown-content'>
+                        <li><a href="#!">Sponsors</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">Affiliates</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" href="#!" data-activates="employers">Employers<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    <ul id='employers' class='dropdown-content'>
+                        <li><a href="#!">Post A Job</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">Check Jobs</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" href="#!" data-activates="resources">Resources<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    <ul id='resources' class='dropdown-content'>
+                        <li><a href="#!">Newsletter</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">Notes</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">Portal(UoN)</a></li>
+                    </ul>
+                </li>
+                <li><a  ng-href="#gallery">Gallery</a></li>
+                <li><a  ng-href="#team">Our Team</a></li>
+                <li><a  ng-href="#contact">Contacts Us</a></li>
+
+            </ul>
+            <!-- nav menu -->
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+    </nav>
+
+<div ng-view></div>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l4 m4 s12">
+                <h5 class="white-text">Quick Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col l4 m4 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col l4 m4 s12">
+                <h5 class="white-text">Contacts</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3 phone" href="tel:0700203130"><i class="mdi mdi-phone ico"></i>0700 000 000</a></li>
+                    <li><a class="grey-text text-lighten-3 email" href="mailto:info@fisauon.or.ke"><i class="mdi mdi-email ico"></i>info@fisauon.or.ke</a></li>
+                    <a href="#" class="fb"><i class="mdi mdi-facebook-box medium "></i></a>
+                    <a href="#" class="twitter"><i class="mdi mdi-twitter medium "></i></a>
+                    <a href="#" class="ig"><i class="mdi mdi-instagram medium"></i></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © Copyright <script>document.write(new Date().getFullYear())</script>
+          <div class="right"> Finance Students Association(FISA)</div>
+        </div>
+    </div>
+</footer>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<script src="bower_components/materialize/bin/materialize.js"></script>
+<script src="scripts/unoSlider.min.js"></script>
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+<script src="scripts/app.js"></script>
+
+
+
+</body>
+</html>
